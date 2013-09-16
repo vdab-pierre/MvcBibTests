@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Bibliotheek.Domain">
+      <HintPath>..\..\Bibliotheek\Bibliotheek.Domain\bin\Debug\Bibliotheek.Domain.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -324,16 +327,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Bibliotheek\Bibliotheek.Abstract\Bibliotheek.Abstract.csproj">
-      <Project>{65c6db3c-265a-43c3-8cc7-97d3cdb69306}</Project>
-      <Name>Bibliotheek.Abstract</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Bibliotheek\Bibliotheek.Domain\Bibliotheek.Domain.csproj">
-      <Project>{732a2c47-4081-495e-94c6-9eddaae562ed}</Project>
-      <Name>Bibliotheek.Domain</Name>
-    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
