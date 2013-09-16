@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcBibTests", "MvcBibTests\MvcBibTests.csproj", "{A7594CAD-A371-4C3E-914C-18D7A1B28B0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotheek.Abstract", "..\Bibliotheek\Bibliotheek.Abstract\Bibliotheek.Abstract.csproj", "{65C6DB3C-265A-43C3-8CC7-97D3CDB69306}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bibliotheek.Domain", "..\Bibliotheek\Bibliotheek.Domain\Bibliotheek.Domain.csproj", "{732A2C47-4081-495E-94C6-9EDDAAE562ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7594CAD-A371-4C3E-914C-18D7A1B28B0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7594CAD-A371-4C3E-914C-18D7A1B28B0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7594CAD-A371-4C3E-914C-18D7A1B28B0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7594CAD-A371-4C3E-914C-18D7A1B28B0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65C6DB3C-265A-43C3-8CC7-97D3CDB69306}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65C6DB3C-265A-43C3-8CC7-97D3CDB69306}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65C6DB3C-265A-43C3-8CC7-97D3CDB69306}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65C6DB3C-265A-43C3-8CC7-97D3CDB69306}.Release|Any CPU.Build.0 = Release|Any CPU
+		{732A2C47-4081-495E-94C6-9EDDAAE562ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{732A2C47-4081-495E-94C6-9EDDAAE562ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{732A2C47-4081-495E-94C6-9EDDAAE562ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{732A2C47-4081-495E-94C6-9EDDAAE562ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

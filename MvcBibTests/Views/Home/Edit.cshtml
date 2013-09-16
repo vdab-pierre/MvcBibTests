@@ -1,0 +1,54 @@
+﻿@model Bibliotheek.Domain.Entities.Boek
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Boek</legend>
+
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Isbn)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Isbn)
+            @Html.ValidationMessageFor(model => model.Isbn)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Titel)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Titel)
+            @Html.ValidationMessageFor(model => model.Titel)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.Samenvatting)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.Samenvatting)
+            @Html.ValidationMessageFor(model => model.Samenvatting)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

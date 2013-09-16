@@ -1,0 +1,19 @@
+﻿@model List<Bibliotheek.Domain.Entities.Boek>
+
+<form method="get">
+    <input type="search" name="searchTerm" />
+    <input type="submit" value="Zoek" title="Typ hier een string dat kan voorkomen in een boektitel, beginletters van naam of voornaam van de auteur, beginletters van de naam van de uitgever of begin van het isbn"/>
+
+</form>
+
+@foreach (var b in Model) { 
+    <div>
+        <p><strong>@b.Titel (@b.Exemplaren.Count())</strong></p>
+        <p>@b.Isbn</p>
+        @foreach (var a in b.Auteurs) { 
+            <span>@a.Familienaam @a.Voornaam</span>
+        }
+
+    </div>
+    <hr />
+}

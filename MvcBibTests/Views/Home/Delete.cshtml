@@ -1,0 +1,51 @@
+﻿@model Bibliotheek.Domain.Entities.Boek
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Ben je zeker dat je alle exemplaren van dit boek wilt verwijderen uit de database?</h3>
+<fieldset>
+    <legend>Boek</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Isbn)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Isbn)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Titel)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Titel)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Samenvatting)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Samenvatting)
+    </div>
+</fieldset>
+@if(Model.Exemplaren!=null){
+        <p>Exemplaren:</p>
+        <ul>
+        @foreach (var ex in Model.Exemplaren) { 
+            <li>
+                Druk: @ex.Druk, Commentaar: @ex.Commentaar 
+            </li>
+        }
+        </ul>
+    }
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

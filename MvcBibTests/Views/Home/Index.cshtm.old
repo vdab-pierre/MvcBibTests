@@ -1,0 +1,4 @@
+﻿@model List<Bibliotheek.Domain.Entities.Boek>
+
+@Html.Partial("_BoekLijst",Model)
+
